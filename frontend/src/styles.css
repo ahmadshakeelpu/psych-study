@@ -1,5 +1,0 @@
-body{ font-family: Arial, sans-serif; padding: 20px; }
-.container{ max-width: 720px; margin: 0 auto; }
-.chat-box{ border: 1px solid #ccc; padding:10px; height:200px; overflow:auto; }
-.user{ text-align:right; }
-.bot{ text-align:left; }

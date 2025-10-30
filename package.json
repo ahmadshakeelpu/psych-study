@@ -1,0 +1,35 @@
+{
+	"name": "psych-study",
+	"version": "1.0.0",
+	"description": "Psychological Study - AI in Recruitment",
+	"private": true,
+	"scripts": {
+		"dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" --names \"Backend,Frontend\" --prefix-colors \"cyan,yellow\"",
+		"dev:backend": "cd backend && npm run dev",
+		"dev:frontend": "cd nextjs-frontend && npm run dev",
+		"build": "npm run build:frontend",
+		"build:frontend": "cd nextjs-frontend && npm run build",
+		"start": "concurrently \"npm run start:backend\" \"npm run start:frontend\" --names \"Backend,Frontend\" --prefix-colors \"cyan,yellow\"",
+		"start:backend": "cd backend && npm start",
+		"start:frontend": "cd nextjs-frontend && npm start",
+		"install:all": "npm install && cd backend && npm install && cd ../nextjs-frontend && npm install",
+		"clean": "rm -rf node_modules backend/node_modules nextjs-frontend/node_modules nextjs-frontend/.next",
+		"setup": "npm run install:all"
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.2"
+	},
+	"engines": {
+		"node": ">=18.0.0",
+		"npm": ">=8.0.0"
+	},
+	"keywords": [
+		"psychology",
+		"study",
+		"ai",
+		"recruitment",
+		"research"
+	],
+	"author": "Research Team",
+	"license": "MIT"
+}
